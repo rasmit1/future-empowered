@@ -1,18 +1,35 @@
-header:
-  siteBrand: true
-  BrandName: "Arberia Theme"
-  BrandLogo: "img/arberia-logo.webp"
-  BrandBorder: "rounded" # Use rounded or rounded-circle
-  siteBrandWidth: 38
-  siteBrandHeight: 38
+#################### default params ################################
+
+# Brand Bar (inside header)
+siteBrand: true
+BrandName: "Future Empowered"
+BrandLogo: "FE" # "img/arberia-logo.webp"
+BrandBorder: "rounded" # Use rounded or rounded-circle
+siteBrandWidth: 38
+siteBrandHeight: 38
+
 tagline: "Responsive Hugo Theme"
 description: "Arberia Theme for Hugo Static Site Generator. Insert here general site description"
+keywords: "Insert keywords"
+author: "Vincenzo Antedoro"
 author_resume: "<strong>Vincenzo Antedoro</strong> is an engineer who helps those who want to invest in renewables. For the rest he enjoys teaching with the method of <em>learning by doing</em>."
+
+# Date format. See https://gohugo.io/functions/format/
 dateformat: "Monday, January 2, 2006"
+
+# Number of post on pagination list
 paginate: "6"
+
+# Summary length on list post 
 summaryLength: "225"
-disableSearch: false
+
+# Enable or disable search
+disableSearch: false 
+
+# YouTube Channel ID
 YTChannelID: "UClA8GwWzurVCprEY6OsCvhw"
+
+# Formspree Contact Form Link
 contact_form_action: "https://formspree.io/f/mvovbvga"
 
 # Google Analytics 4 (GA4) Configuration
@@ -26,7 +43,7 @@ disqus:
   enable: true
   shortname: "your-shortname-disqus" # Replace with your Disqus shortname
 
-
+#################### Social link Buttons ################################
 social:
   links:
     - title: "medium"
@@ -62,7 +79,6 @@ social:
     Reddit: false
     Pocket: false
     Instapaper: false
-
 
 assets:
   favicon: "favicon/favicon.ico"
