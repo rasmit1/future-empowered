@@ -1,0 +1,163 @@
+baseURL: https://www.futureempowered.com/
+languageCode: en-us
+title: Future Empowered
+theme: arberia
+copyright: "&copy; 2025 Rashmi. All rights reserved."
+relativeURLs: True
+module:
+  hugoVersion:
+    extended: True
+    max: ""
+    min: "0.101.0"
+menu:
+  main: 
+    - identifier: start_here
+      name: "Start Here"
+      pre: "fa fa-drafting-compass"
+      post: ""
+      url: "/start-here"
+      title: ""
+      weight: 2
+    - identifier: view
+      name: "View"
+      pre: "fa fa-th-large"
+      post: ""
+      url: ""
+      title: ""
+      weight: 3
+    - identifier: list_view
+      name: "List View ->"
+      pre: "fa fa-list"
+      post: "Post list view of all posts"
+      url: "/posts"
+      title: ""
+      weight: 4
+      parent: "view"
+    - identifier: grid_view
+      name: "Grid View ->"
+      pre: "fa fa-th"
+      post: "Post grid view of all posts"
+      url: "/portfolio/"
+      title: ""
+      weight: 5
+      parent: "view"
+    - identifier: post_view_sidebar
+      name: "Single Post View with Sidebar"
+      pre: "fa fa-file-text-o"
+      post: "Single post view with sidebar"
+      url: "/post-with-sidebar/"
+      title: ""
+      weight: 6
+      parent: "view"
+    - identifier: post_view_no_sidebar
+      name: "Single Post View Without Sidebar"
+      pre: "fa fa-file-text-o"
+      post: "Single post view without sidebar"
+      url: "/post-without-sidebar/"
+      title: ""
+      weight: 7
+      parent: "view"
+    - identifier: post_view_cover
+      name: "Single Post View With Cover"
+      pre: "fa fa-picture-o"
+      post: "Single post view with cover"
+      url: "/post-with-cover-image/"
+      title: ""
+      weight: 8
+      parent: "view"
+    - identifier: video_post
+      name: "Video Post"
+      pre: "fa fa-film"
+      post: "Single post view of video post"
+      url: "/video-post-view/"
+      title: ""
+      weight: 9
+      parent: "view"
+    - identifier: landinpage
+      name: "Landing Page"
+      pre: "fa fa-star text-warning"
+      post: "Insert html on index.md file"
+      url: "/landinpage/"
+      title: ""
+      weight: 10
+      parent: "view"
+    - identifier: contact
+      name: "Contact"
+      pre: ""
+      post: ""
+      url: "/contact/"
+      title: ""
+      weight: 12
+    - identifier: about
+      name: "About "
+      pre: ""
+      post: ""
+      url: "/about/"
+      title: ""
+      weight: 13
+  footer: 
+    - name: "Contact"
+      url: "/contatti"
+      weight: 1
+    - name: "RSS Feed"
+      url: "/index.xml"
+      weight: 2
+    - name: "Privacy&Policy"
+      url: "/privacy&policy"
+      weight: 3
+params: 
+  dateFormat: "Monday, January 2, 2006"
+  author:
+    facebook: "https://facebook.com/example" 
+    witter: "https://twitter.com/example" 
+    mail: "contact@example.org" 
+    name: "Rashmi" 
+    location: New York 
+    phone: (999) 999-9999 
+    hours: "**Mon-Fri:** 9:00AM - 6:00PM, ET" 
+  contact:
+    email: info@example.org
+    phone: +1 202-555-1212
+  subtitle: The Best Widgets on Earth
+  color: "#4f46e5"
+  copyright: "Copyright &copy; 2022 Acme Corporation.
+    All Rights Reserved."
+  tags: ["blog", "clean", "responsive", "theme"]
+  features: ["post-with-sidebar", "video-post", "cover-post", "post-no-sidebar", "search", "disqus", "social-share", "SEO Optimized"]
+  footer:
+  - title: About
+    content: >
+      Acme Corporation is the world's leading
+      manufacturer of digital shapes. From squares and
+      circles to triangles and hexagons, we have it
+      all. Browse through our collection of various
+      forms with different thicknesses and line styles.
+      We shape the world. You live in it.
+
+
+  - title: Recent Blog Posts
+    recents: blog
+    recentCount: 7
+  - title: Contact Us
+    contact: true
+  siteBrand: true
+  BrandName: "Arberia Theme"
+  BrandLogo: "img/arberia-logo.webp"
+  BrandBorder: "rounded" # Use rounded or rounded-circle
+  siteBrandWidth: 38
+  siteBrandHeight: 38 
+taxonomies:
+  tag: "tags"
+  category: "categories"
+outputs:
+  home: ["HTML", "JSON", "RSS", "AMP"]
+  page: ["HTML"]
+  section: ["HTML", "RSS"]
+  taxonomy: ["HTML", "RSS"]
+markup:
+  tableOfContents:
+    endLevel: 5
+    ordered: false
+    startLevel: 2
+    tocMinWordCount: 100
+
